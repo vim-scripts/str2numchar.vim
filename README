@@ -1,0 +1,21 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1646
+
+Author:       secondlife <hotchpotch@NOSPAM@gmail.com>
+Last Change:  2006 Sep 02
+Version: 0.1, for Vim 7.0
+
+DESCRIPTION:
+ This plugin is String convert to Numeric Character Reference
+ and String convert to Hex Literal
+
+for example:
+:echo Str2HexLiteral('abcd')
+\x61\x62\x63\x64
+:echo Str2NumChar('abcd')
+abcd
+
+==================== file str2numchar.vimrc ====================
+vmap <silent> sn :Str2NumChar<CR>
+vmap <silent> sh :Str2HexLiteral<CR>
+==================== end: str2numchar.vimrc ====================
+
