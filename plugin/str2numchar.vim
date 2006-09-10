@@ -1,7 +1,7 @@
 " str2numchar.vim - String convert to Numeric Character Reference
 " Author:       secondlife <hotchpotch@NOSPAM@gmail.com>
 " Last Change:  2006 Sep 02
-" Version: 0.1, for Vim 7.0
+" Version: 0.2, for Vim 7.0
 "
 " DESCRIPTION:
 "  This plugin is String convert to Numeric Character Reference
@@ -48,7 +48,7 @@ function! String2HexLiteral(str)
   let out = ''
   let ix = 0
   while ix < strlen(a:str)
-    let out = out . '\x' . s:nr2Hex(char2nr(a:str[ix]))
+    let out = out . '\\x' . s:nr2Hex(char2nr(a:str[ix]))
     let ix = ix + 1
   endwhile
   return out
